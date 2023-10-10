@@ -25,6 +25,21 @@ const Btn = styled.button`
   &:active {
     opacity: 0.6;
   }
+  @media screen and (max-width: 1024px) {
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 13px 18px;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 14px;
+    border-radius: 6px;
+    padding: 10px 15px;
+  }
+  @media screen and (max-width: 425px) {
+    font-size: 12px;
+    border-radius: 4px;
+    padding: 8px 13px;
+  }
 `;
 
 export default StyledButton;

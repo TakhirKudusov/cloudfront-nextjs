@@ -8,13 +8,10 @@ const Footer = () => {
     <Wrapper>
       <ContentWrapper>
         <Text className={montserrat.className}>
-          CLOUDFRONT LTD, Cyprus, A.G. Leventi 5, Floor 13, Flat/Office 1301,
-          Nicosia
+          CLOUDFRONT LTD, Cyprus, A.G. Leventi&nbsp;5, Floor&nbsp;13,
+          Flat/Office 1301, Nicosia, Cyprus Email: cloudfrontcyprus@gmail.com
+          +375&nbsp;97530091
         </Text>
-        <Text className={montserrat.className}>
-          Cyprus Email: cloudfrontcyprus@gmail.com
-        </Text>
-        <Text className={montserrat.className}>+375 97530091</Text>
       </ContentWrapper>
     </Wrapper>
   );
@@ -40,6 +37,17 @@ const Wrapper = styled.div`
   background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   justify-content: center;
+  margin-top: 50px;
+  @media screen and (max-width: 1024px) {
+    margin-top: 40px;
+    padding: 40px 50px;
+  }
+  @media screen and (max-width: 500px) {
+    padding: 30px 40px;
+  }
+  @media screen and (max-width: 425px) {
+    padding: 25px 30px;
+  }
 `;
 
 export default Footer;
